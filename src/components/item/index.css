@@ -1,0 +1,9 @@
+.imgContainer{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardContent{
+    width: 300px;
+}
