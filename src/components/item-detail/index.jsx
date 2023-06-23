@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import ItemCount from '../item-count';
 
-export default function ItemDetail({ img, title, price, description }) {
+export default function ItemDetail({ img, title, price, description, category }) {
 
     return (
         <Card className="card" sx={{ maxWidth: 345}}>
@@ -24,7 +24,10 @@ export default function ItemDetail({ img, title, price, description }) {
                     Precio: {price}
                 </Typography>
                 <Typography variant="body2" color="black">
-                    Descripcion: {description}
+                    Descripción: {description}
+                </Typography>
+                <Typography variant="body2" color="black">
+                    Categoría: {category}
                 </Typography>
             </CardContent>
             <CardActions>

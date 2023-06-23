@@ -28,7 +28,9 @@ export default function MediaCard({ img, title, price, stock }) {
                 </Typography>
             </CardContent>
             <CardActions>
-                <ItemCount initial={1} stock={10} />
+                <div className="buttonContainer">
+                <button className="detailButton">Ver detalle</button>
+                </div>
             </CardActions>
         </Card>
     );

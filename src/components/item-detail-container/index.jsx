@@ -3,6 +3,7 @@ import {useState} from "react"
 import {useEffect} from "react"
 import { getProductById } from "../../pages/products"
 import ItemDetail from "../item-detail"
+import "./index.css"
 
 const ItemDetailContainer = () =>{
 const [product, setProduct] = useState(0)
@@ -18,7 +19,7 @@ useEffect (() => {
 }, [])
 
 return (
-    <div>
+    <div className="detailContainer">
         <ItemDetail {...product}/>
     </div>
 )
