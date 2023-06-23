@@ -28,7 +28,7 @@ export default function ItemDetail({ img, title, price, description }) {
                 </Typography>
             </CardContent>
             <CardActions>
-            <ItemCount initial={1} />
+            <ItemCount initial={1} stock={10} />
             </CardActions>
         </Card>
     );
